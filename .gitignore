@@ -1,0 +1,31 @@
+# Environment & secrets (never commit .env)
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# Python bytecode & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.ruff_cache/
+
+# Local gcloud / credentials
+.gcloud/
+*.key
+*.pem
+*credentials*.json
+*service-account*.json
+
+# OS / Editor files
+.DS_Store
+.vscode/
+.idea/

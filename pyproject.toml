@@ -1,0 +1,13 @@
+[project]
+name = "ge-secure-cloud-run-mcp"
+version = "0.1.0"
+description = "Reference implementation for connecting Gemini Enterprise privately to internal Cloud Run MCP servers via Egress Agent Gateway, PSC, and Scoped Cloud DNS (PGA & PSC Endpoint options)."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.8.0",
+    "httpx>=0.27.0",
+    "starlette>=0.37.0",
+    "uvicorn>=0.30.0",
+    "python-dotenv>=1.0.1",
+]

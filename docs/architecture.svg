@@ -1,0 +1,438 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 548" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Google Sans', 'Roboto', system-ui, -apple-system, sans-serif;">
+  <defs>
+    <!-- Drop Shadow for Component Cards -->
+    <filter id="card-shadow" x="-5%" y="-5%" width="110%" height="115%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3.5" flood-color="#202124" flood-opacity="0.07"/>
+    </filter>
+
+    <!-- Arrowhead Markers -->
+    <marker id="arrow-primary" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1a73e8"/>
+    </marker>
+    <marker id="arrow-dns" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#9334e6"/>
+    </marker>
+    <marker id="arrow-pga" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#1e8e3e"/>
+    </marker>
+
+    <!-- Connector Label Knockout Masks -->
+    <mask id="mask-edge-1" maskUnits="userSpaceOnUse" x="0" y="0" width="1340" height="548">
+      <rect width="1340" height="548" fill="white"/>
+      <rect x="176" y="222" width="76" height="20" rx="10" fill="black"/>
+    </mask>
+    <mask id="mask-edge-2" maskUnits="userSpaceOnUse" x="0" y="0" width="1340" height="548">
+      <rect width="1340" height="548" fill="white"/>
+      <rect x="376" y="313" width="116" height="20" rx="10" fill="black"/>
+    </mask>
+    <mask id="mask-edge-3" maskUnits="userSpaceOnUse" x="0" y="0" width="1340" height="548">
+      <rect width="1340" height="548" fill="white"/>
+      <rect x="616" y="225" width="100" height="20" rx="10" fill="black"/>
+    </mask>
+    <mask id="mask-edge-4" maskUnits="userSpaceOnUse" x="0" y="0" width="1340" height="548">
+      <rect width="1340" height="548" fill="white"/>
+      <rect x="616" y="408" width="100" height="20" rx="10" fill="black"/>
+    </mask>
+    <mask id="mask-edge-5" maskUnits="userSpaceOnUse" x="0" y="0" width="1340" height="548">
+      <rect width="1340" height="548" fill="white"/>
+      <rect x="1026" y="225" width="122" height="20" rx="10" fill="black"/>
+    </mask>
+    <mask id="mask-edge-6" maskUnits="userSpaceOnUse" x="0" y="0" width="1340" height="548">
+      <rect width="1340" height="548" fill="white"/>
+      <rect x="1026" y="408" width="122" height="20" rx="10" fill="black"/>
+    </mask>
+
+    <!-- Official Google Gemini 2025 4-Color Icon Filters & Mask -->
+    <linearGradient id="gemini-grad" x1="18.447" y1="43.42" x2="52.153" y2="15.004" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4893FC"/>
+      <stop offset=".27" stop-color="#4893FC"/>
+      <stop offset=".777" stop-color="#969DFF"/>
+      <stop offset="1" stop-color="#BD99FE"/>
+    </linearGradient>
+    <mask id="gemini-mask" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="65" height="65">
+      <path d="M32.447 0c.68 0 1.273.465 1.439 1.125a38.904 38.904 0 001.999 5.905c2.152 5 5.105 9.376 8.854 13.125 3.751 3.75 8.126 6.703 13.125 8.855a38.98 38.98 0 005.906 1.999c.66.166 1.124.758 1.124 1.438 0 .68-.464 1.273-1.125 1.439a38.902 38.902 0 00-5.905 1.999c-5 2.152-9.375 5.105-13.125 8.854-3.749 3.751-6.702 8.126-8.854 13.125a38.973 38.973 0 00-2 5.906 1.485 1.485 0 01-1.438 1.124c-.68 0-1.272-.464-1.438-1.125a38.913 38.913 0 00-2-5.905c-2.151-5-5.103-9.375-8.854-13.125-3.75-3.749-8.125-6.702-13.125-8.854a38.973 38.973 0 00-5.905-2A1.485 1.485 0 010 32.448c0-.68.465-1.272 1.125-1.438a38.903 38.903 0 005.905-2c5-2.151 9.376-5.104 13.125-8.854 3.75-3.749 6.703-8.125 8.855-13.125a38.972 38.972 0 001.999-5.905A1.485 1.485 0 0132.447 0z" fill="#000"/>
+      <path d="M32.447 0c.68 0 1.273.465 1.439 1.125a38.904 38.904 0 001.999 5.905c2.152 5 5.105 9.376 8.854 13.125 3.751 3.75 8.126 6.703 13.125 8.855a38.98 38.98 0 005.906 1.999c.66.166 1.124.758 1.124 1.438 0 .68-.464 1.273-1.125 1.439a38.902 38.902 0 00-5.905 1.999c-5 2.152-9.375 5.105-13.125 8.854-3.749 3.751-6.702 8.126-8.854 13.125a38.973 38.973 0 00-2 5.906 1.485 1.485 0 01-1.438 1.124c-.68 0-1.272-.464-1.438-1.125a38.913 38.913 0 00-2-5.905c-2.151-5-5.103-9.375-8.854-13.125-3.75-3.749-8.125-6.702-13.125-8.854a38.973 38.973 0 00-5.905-2A1.485 1.485 0 010 32.448c0-.68.465-1.272 1.125-1.438a38.903 38.903 0 005.905-2c5-2.151 9.376-5.104 13.125-8.854 3.75-3.749 6.703-8.125 8.855-13.125a38.972 38.972 0 001.999-5.905A1.485 1.485 0 0132.447 0z" fill="url(#gemini-grad)"/>
+    </mask>
+    <filter id="gem-f0" x="-19.824" y="13.152" width="39.274" height="43.217" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="2.46"/></filter>
+    <filter id="gem-f1" x="-15.001" y="-40.257" width="84.868" height="85.688" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="11.891"/></filter>
+    <filter id="gem-f2" x="-20.776" y="11.927" width="79.454" height="90.916" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="10.109"/></filter>
+    <filter id="gem-f4" x="-19.845" y="15.459" width="79.731" height="81.505" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="10.109"/></filter>
+    <filter id="gem-f5" x="29.832" y="-11.552" width="75.117" height="73.758" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="9.606"/></filter>
+    <filter id="gem-f6" x="-38.583" y="-16.253" width="78.135" height="78.758" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="8.706"/></filter>
+    <filter id="gem-f7" x="8.107" y="-5.966" width="78.877" height="77.539" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="7.775"/></filter>
+    <filter id="gem-f8" x="13.587" y="-18.488" width="56.272" height="51.81" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="6.957"/></filter>
+    <filter id="gem-f9" x="-15.526" y="-31.297" width="70.856" height="69.306" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="5.876"/></filter>
+    <filter id="gem-f10" x="-14.168" y="20.964" width="55.501" height="51.571" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feBlend in="SourceGraphic" in2="BackgroundImageFix" result="shape"/><feGaussianBlur stdDeviation="7.273"/></filter>
+
+    <!-- Official Google Cloud Mark -->
+    <symbol id="icon-google-cloud" viewBox="0 0 36 28">
+      <path fill="#ea4335" d="M21.85,7.41l1,0,2.85-2.85.14-1.21A12.81,12.81,0,0,0,5,9.6a1.55,1.55,0,0,1,1-.06l5.7-.94s.29-.48.44-.45a7.11,7.11,0,0,1,9.73-.74Z"/>
+      <path fill="#4285f4" d="M29.76,9.6a12.84,12.84,0,0,0-3.87-6.24l-4,4A7.11,7.11,0,0,1,24.5,13v.71a3.56,3.56,0,1,1,0,7.12H17.38l-.71.72v4.27l.71.71H24.5A9.26,9.26,0,0,0,29.76,9.6Z"/>
+      <path fill="#34a853" d="M10.25,26.49h7.12v-5.7H10.25a3.54,3.54,0,0,1-1.47-.32l-1,.31L4.91,23.63l-.25,1A9.21,9.21,0,0,0,10.25,26.49Z"/>
+      <path fill="#fbbc05" d="M10.25,8A9.26,9.26,0,0,0,4.66,24.6l4.13-4.13a3.56,3.56,0,1,1,4.71-4.71l4.13-4.13A9.25,9.25,0,0,0,10.25,8Z"/>
+    </symbol>
+
+    <!-- Official Google Gemini 4-Color Sparkle -->
+    <symbol id="icon-gemini" viewBox="0 0 65 65">
+      <g mask="url(#gemini-mask)">
+        <path d="M0 0h65v65H0z" fill="url(#gemini-grad)"/>
+        <g filter="url(#gem-f0)"><path d="M-5.859 50.734c7.498 2.663 16.116-2.33 19.249-11.152 3.133-8.821-.406-18.131-7.904-20.794-7.498-2.663-16.116 2.33-19.25 11.151-3.132 8.822.407 18.132 7.905 20.795z" fill="#FFE432"/></g>
+        <g filter="url(#gem-f1)"><path d="M27.433 21.649c10.3 0 18.651-8.535 18.651-19.062 0-10.528-8.35-19.062-18.651-19.062S8.78-7.94 8.78 2.587c0 10.527 8.35 19.062 18.652 19.062z" fill="#FC413D"/></g>
+        <g filter="url(#gem-f2)"><path d="M20.184 82.608c10.753-.525 18.918-12.244 18.237-26.174-.68-13.93-9.95-24.797-20.703-24.271C6.965 32.689-1.2 44.407-.519 58.337c.681 13.93 9.95 24.797 20.703 24.271z" fill="#00B95C"/></g>
+        <g filter="url(#gem-f4)"><path d="M30.954 74.181c9.014-5.485 11.427-17.976 5.389-27.9-6.038-9.925-18.241-13.524-27.256-8.04-9.015 5.486-11.428 17.977-5.39 27.902 6.04 9.924 18.242 13.523 27.257 8.038z" fill="#00B95C"/></g>
+        <g filter="url(#gem-f5)"><path d="M67.391 42.993c10.132 0 18.346-7.91 18.346-17.666 0-9.757-8.214-17.667-18.346-17.667s-18.346 7.91-18.346 17.667c0 9.757 8.214 17.666 18.346 17.666z" fill="#3186FF"/></g>
+        <g filter="url(#gem-f6)"><path d="M-13.065 40.944c9.33 7.094 22.959 4.869 30.442-4.972 7.483-9.84 5.987-23.569-3.343-30.663C4.704-1.786-8.924.439-16.408 10.28c-7.483 9.84-5.986 23.57 3.343 30.664z" fill="#FBBC04"/></g>
+        <g filter="url(#gem-f7)"><path d="M34.74 51.43c11.135 7.656 25.896 5.524 32.968-4.764 7.073-10.287 3.779-24.832-7.357-32.488C49.215 6.52 34.455 8.654 27.382 18.94c-7.072 10.288-3.779 24.833 7.357 32.49z" fill="#3186FF"/></g>
+        <g filter="url(#gem-f8)"><path d="M54.984-2.336c2.833 3.852-.808 11.34-8.131 16.727-7.324 5.387-15.557 6.631-18.39 2.78-2.833-3.853.807-11.342 8.13-16.728 7.324-5.387 15.558-6.631 18.39-2.78z" fill="#749BFF"/></g>
+        <g filter="url(#gem-f9)"><path d="M31.727 16.104C43.053 5.598 46.94-8.626 40.41-15.666c-6.53-7.04-21.006-4.232-32.332 6.274s-15.214 24.73-8.683 31.77c6.53 7.04 21.006 4.232 32.332-6.274z" fill="#FC413D"/></g>
+        <g filter="url(#gem-f10)"><path d="M8.51 53.838c6.732 4.818 14.46 5.55 17.262 1.636 2.802-3.915-.384-10.994-7.116-15.812-6.731-4.818-14.46-5.55-17.261-1.636-2.802 3.915.383 10.994 7.115 15.812z" fill="#FFEE48"/></g>
+      </g>
+    </symbol>
+
+    <!-- Official Cloud DNS Product Icon -->
+    <symbol id="icon-cloud-dns" viewBox="0 0 24 24">
+      <polygon fill="#4285f4" points="13 18 11 18 11 8 13 8 13 18"/>
+      <polygon fill="#669df6" points="2 21 22 21 22 19 2 19 2 21"/>
+      <polygon fill="#aecbfa" points="10 22 14 22 14 18 10 18 10 22"/>
+      <rect fill="#aecbfa" x="2" y="2" width="20" height="6"/>
+      <rect fill="#669df6" x="12" y="2" width="10" height="6"/>
+      <rect fill="#ffffff" x="4" y="4" width="2" height="2"/>
+      <rect fill="#aecbfa" x="2" y="10" width="20" height="6"/>
+      <rect fill="#669df6" x="12" y="10" width="10" height="6"/>
+      <rect fill="#ffffff" x="4" y="12" width="2" height="2"/>
+    </symbol>
+
+    <!-- Official Private Service Connect Product Icon -->
+    <symbol id="icon-psc" viewBox="0 0 24 24">
+      <path d="M12,6.23h0L7.28,8.33v3.15A6.73,6.73,0,0,0,10,16.79a5.75,5.75,0,0,0,2,1h0Z" fill="#669df6"/>
+      <path d="M12,17.77a6.52,6.52,0,0,0,4.72-6.29V8.33L12,6.23Z" fill="#4285f4"/>
+      <path d="M17.08,11.62c0,.26,0,.51-.06.76H19.4v-.76Z" fill="#4285f4"/>
+      <path d="M6.92,11.62c0,.26,0,.51.06.76H4.6v-.76Z" fill="#4285f4"/>
+      <path d="M3.59,12.73a.73.73,0,0,1,0-1.46v-.6a1.33,1.33,0,1,0,0,2.66Z" fill="#aecbfa"/>
+      <path d="M14.22,14.27a.56.56,0,0,1-.56.55H10.34l-.1,0a.54.54,0,0,1-.45-.53V11.5a.55.55,0,0,1,.55-.55h.28v-.56a1.39,1.39,0,0,1,2.77,0V11h.27a.33.33,0,0,1,.15,0,.54.54,0,0,1,.38.42.29.29,0,0,1,0,.1ZM12,9.54h-.1a.85.85,0,0,0-.75.74s0,.07,0,.1V11h1.72v-.56a.85.85,0,0,0-.08-.35A.84.84,0,0,0,12,9.54Z" fill="#ffffff"/>
+      <path d="M12.25,11.58l-1.1,1.47h.63v1.11l1.07-1.49h-.6Z" fill="#4285f4"/>
+      <path d="M3.59,13.33A1.32,1.32,0,0,0,4.92,12v0a1.32,1.32,0,0,0-1.33-1.33v.6a.73.73,0,0,1,0,1.46Z" fill="#669df6"/>
+      <path d="M20.41,12.73a.73.73,0,0,1,0-1.46v-.6a1.33,1.33,0,0,0,0,2.66Z" fill="#aecbfa"/>
+      <path d="M20.41,13.33A1.32,1.32,0,0,0,21.75,12v0a1.33,1.33,0,0,0-1.34-1.33v.6a.73.73,0,1,1,0,1.46Z" fill="#669df6"/>
+    </symbol>
+
+    <!-- Official VPC Icon -->
+    <symbol id="icon-vpc" viewBox="0 0 24 24">
+      <rect fill="#aecbfa" x="16" y="2" width="6" height="6"/>
+      <rect fill="#669df6" x="19" y="2" width="3" height="6"/>
+      <rect fill="#aecbfa" x="16" y="16" width="6" height="6"/>
+      <rect fill="#669df6" x="19" y="16" width="3" height="6"/>
+      <rect fill="#aecbfa" x="2" y="2" width="6" height="6"/>
+      <rect fill="#669df6" x="5" y="2" width="3" height="6"/>
+      <rect fill="#aecbfa" x="2" y="16" width="6" height="6"/>
+      <rect fill="#669df6" x="5" y="16" width="3" height="6"/>
+      <rect fill="#669df6" x="8" y="4" width="8" height="2"/>
+      <rect fill="#669df6" x="8" y="18" width="8" height="2"/>
+      <rect fill="#669df6" x="18" y="8" width="2" height="8"/>
+      <rect fill="#669df6" x="4" y="8" width="2" height="8"/>
+      <rect fill="#4285f4" x="4" y="8" width="2" height="2"/>
+      <rect fill="#4285f4" x="18" y="8" width="2" height="2"/>
+      <rect fill="#4285f4" x="8" y="4" width="2" height="2"/>
+      <rect fill="#4285f4" x="8" y="18" width="2" height="2"/>
+    </symbol>
+
+    <!-- Verbatim Icons from references/gcp-icons.md -->
+    <symbol id="icon-user" viewBox="0 0 512 512">
+      <circle cx="256" cy="176" r="72" fill="#f1f3f4" stroke="#5f6368" stroke-width="28"/>
+      <path d="M112,400c0-79.5,64.5-144,144-144s144,64.5,144,144" fill="none" stroke="#5f6368" stroke-width="28" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="icon-networking" viewBox="0 0 512 512">
+      <g id="art">
+      <path d="M331.66,331.66l-22.627-22.627c29.242-29.243,29.242-76.823,0-106.066l22.627-22.627c41.72,41.719,41.72,109.602,0,151.32h0Z" fill="#9aa0a6"/>
+      <path d="M180.34,331.66c-41.72-41.719-41.72-109.602,0-151.32l22.627,22.627c-29.242,29.243-29.242,76.823,0,106.066l-22.627,22.627Z" fill="#9aa0a6"/>
+      <path d="M309.033,202.967c-29.242-29.242-76.824-29.242-106.066,0l-22.627-22.627c20.21-20.21,47.08-31.34,75.66-31.34s55.45,11.13,75.66,31.34l-22.627,22.627h0Z" fill="#4285f4"/>
+      <path d="M256,363c-28.58,0-55.45-11.13-75.66-31.34l22.627-22.627c29.242,29.242,76.824,29.242,106.066,0l22.627,22.627c-20.21,20.21-47.08,31.34-75.66,31.34Z" fill="#4285f4"/>
+      <path d="M170.229,147.603c5.406-9.256,8.521-20.007,8.521-31.478,0-34.531-28.094-62.625-62.625-62.625s-62.625,28.094-62.625,62.625,28.094,62.625,62.625,62.625c11.471,0,22.222-3.114,31.478-8.52l45.281,45.281c5.831-9.07,13.557-16.796,22.627-22.627l-45.281-45.281h-.001ZM116.125,146.75c-16.887,0-30.625-13.738-30.625-30.625s13.738-30.625,30.625-30.625,30.625,13.738,30.625,30.625-13.738,30.625-30.625,30.625Z" fill="#4285f4"/>
+      <path d="M215.51,319.117c-9.07-5.831-16.796-13.557-22.627-22.627l-45.281,45.281c-9.256-5.406-20.007-8.52-31.478-8.52-34.531,0-62.625,28.094-62.625,62.625s28.094,62.625,62.625,62.625,62.625-28.094,62.625-62.625c0-11.471-3.114-22.222-8.521-31.478l45.281-45.281h0ZM116.125,426.5c-16.887,0-30.625-13.738-30.625-30.625s13.738-30.625,30.625-30.625,30.625,13.738,30.625,30.625-13.738,30.625-30.625,30.625Z" fill="#9aa0a6"/>
+      <path d="M395.875,333.25c-11.471,0-22.222,3.114-31.478,8.52l-45.281-45.281c-5.831,9.07-13.557,16.796-22.627,22.627l45.281,45.281c-5.406,9.256-8.521,20.007-8.521,31.478,0,34.531,28.094,62.625,62.625,62.625s62.625-28.094,62.625-62.625-28.094-62.625-62.625-62.625h.001ZM395.875,426.5c-16.887,0-30.625-13.738-30.625-30.625s13.738-30.625,30.625-30.625,30.625,13.738,30.625,30.625-13.738,30.625-30.625,30.625Z" fill="#4285f4"/>
+      <path d="M395.875,53.5c-34.531,0-62.625,28.094-62.625,62.625,0,11.645,3.205,22.551,8.764,31.902l-45.118,45.118c9.03,5.887,16.707,13.663,22.481,22.773l45.444-45.444c9.16,5.255,19.758,8.276,31.054,8.276,34.531,0,62.625-28.094,62.625-62.625s-28.094-62.625-62.625-62.625ZM395.875,146.75c-16.887,0-30.625-13.738-30.625-30.625s13.738-30.625,30.625-30.625,30.625,13.738,30.625,30.625-13.738,30.625-30.625,30.625Z" fill="#9aa0a6"/>
+      </g>
+    </symbol>
+
+    <symbol id="icon-cloud-run" viewBox="0 0 512 512">
+      <g id="art">
+      <path fill="#fbbc04" d="M144.4,272c-6.4,0-12.4-3.8-14.9-10.1L55.4,75.9c-3.3-8.2.7-17.5,8.9-20.8,8.2-3.3,17.5.7,20.8,8.9l74.2,186c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-3.9,1.1-5.9,1.1h-.1Z"/>
+      <g id="b">
+      <path fill="#ea4335" d="M256,272c-6.4,0-12.4-3.8-14.9-10.1l-74.1-186c-2.6-6.6-.6-14.1,5-18.5s13.4-4.5,19.2-.4l260.1,186c7.2,5.1,8.9,15.1,3.7,22.3s-15.1,8.9-22.3,3.7L216.9,114.7l54,135.3c3.3,8.2-.7,17.5-8.9,20.8-1.9.8-4,1.1-5.9,1.1h-.1Z"/>
+      </g>
+      <path fill="#34a853" d="M127.2,256l-72,180c-3.3,8.2.7,17.5,8.9,20.8,3.1,1.2,4,1.1,5.9,1.1,6.3,0,12.4-3.8,14.9-10.1l74.4-186c.8-2,1.1-4,1.1-5.9h-33.2Z"/>
+      <path fill="#4285f4" d="M414.5,256l-197.7,141.2,54.1-135.3c.8-2,1.1-4,1.1-5.9h-33.2l-72,180c-2.6,6.6-.6-14.1,5,18.5,2.9,2.3,6.4,3.4,9.9,3.4s6.5-1,9.3-3l260.4-186c4.4-3.1,6.7-8,6.7-13h-43.6Z"/>
+      </g>
+    </symbol>
+  </defs>
+
+  <metadata id="diagram-model">{
+    "title": "Private Cloud Run MCP Server with Gemini Enterprise",
+    "subtitle": "End-to-End Private Connectivity via Egress Agent Gateway, Private Service Connect, and FQDN-Scoped Cloud DNS",
+    "nodes": [
+      {
+        "id": "node-user",
+        "name": "Enterprise User",
+        "product": "Gemini Enterprise Web Chat UI",
+        "tier": "client",
+        "description": "Authenticated enterprise user invoking custom MCP tools from Gemini Enterprise.",
+        "evidence": "User browser session in Gemini Enterprise"
+      },
+      {
+        "id": "node-gemini-app",
+        "name": "Gemini Enterprise App",
+        "product": "Discovery Engine · Custom MCP Connector",
+        "tier": "ai",
+        "description": "Configured with use_agent_gateway_egress: true and connectorModes: [FEDERATED, ACTIONS].",
+        "evidence": "projects/PROJECT_ID/locations/global/collections/custom-mcp-private/dataConnector"
+      },
+      {
+        "id": "node-agent-gateway",
+        "name": "Egress Agent Gateway",
+        "product": "Network Services · AGENT_TO_ANYWHERE",
+        "tier": "networking",
+        "focal": true,
+        "description": "Injects Google-signed OIDC tokens and peers DNS for the single MCP service FQDN.",
+        "evidence": "mcp-private-gateway (AGENT_TO_ANYWHERE)"
+      },
+      {
+        "id": "node-cloud-dns",
+        "name": "Scoped Private Cloud DNS",
+        "product": "Cloud DNS · mcp-service.region.run.app.",
+        "tier": "networking",
+        "description": "FQDN-scoped private zone mapping only the MCP server to 199.36.153.8/30 (leaving 1,400+ other Cloud Run services untouched).",
+        "evidence": "priv-zone-mcp-fqdn -> 199.36.153.8/30"
+      },
+      {
+        "id": "node-psc-attachment",
+        "name": "PSC Network Attachment",
+        "product": "Private Service Connect · mcp-vpc-attachment",
+        "tier": "networking",
+        "description": "Accepts private egress traffic from the Agent Gateway into the customer subnet (10.10.0.0/24).",
+        "evidence": "mcp-vpc-attachment (ACCEPT_AUTOMATIC)"
+      },
+      {
+        "id": "node-cloud-run",
+        "name": "Private Cloud Run MCP",
+        "product": "Cloud Run · FastMCP StreamableHTTP",
+        "tier": "compute",
+        "focal": true,
+        "description": "Serverless MCP runtime locked down with --ingress=internal and --no-allow-unauthenticated, reached from the VPC via Subnet Private Google Access.",
+        "evidence": "private-vpc-mcp (--ingress=internal)"
+      }
+    ],
+    "edges": [
+      { "id": "edge-1", "from": "node-user", "to": "node-gemini-app", "label": "1. Prompt", "kind": "sync" },
+      { "id": "edge-2", "from": "node-gemini-app", "to": "node-agent-gateway", "label": "2. Route + OIDC", "kind": "sync" },
+      { "id": "edge-3", "from": "node-agent-gateway", "to": "node-cloud-dns", "label": "3. DNS Peering", "kind": "control" },
+      { "id": "edge-4", "from": "node-agent-gateway", "to": "node-psc-attachment", "label": "4. PSC Egress", "kind": "sync" },
+      { "id": "edge-5", "from": "node-cloud-dns", "to": "node-cloud-run", "label": "5. 199.36.153.8/30", "kind": "control" },
+      { "id": "edge-6", "from": "node-psc-attachment", "to": "node-cloud-run", "label": "6. HTTPS /mcp", "kind": "sync" }
+    ],
+    "views": [
+      {
+        "id": "overview",
+        "title": "Full Architecture",
+        "summary": "End-to-end private MCP tool execution across Google-Managed Tenant, Customer VPC, and Serverless Cloud Run.",
+        "nodes": ["node-user", "node-gemini-app", "node-agent-gateway", "node-cloud-dns", "node-psc-attachment", "node-cloud-run"],
+        "edges": ["edge-1", "edge-2", "edge-3", "edge-4", "edge-5", "edge-6"]
+      },
+      {
+        "id": "dns-peering",
+        "title": "Scoped DNS Peering",
+        "summary": "FQDN-scoped DNS Peering resolves only the target MCP service to Private Google Access VIPs (199.36.153.8/30).",
+        "nodes": ["node-agent-gateway", "node-cloud-dns", "node-cloud-run"],
+        "edges": ["edge-3", "edge-5"]
+      },
+      {
+        "id": "data-plane",
+        "title": "Private PSC Data Plane",
+        "summary": "Authenticated HTTPS MCP tool calls traverse the PSC Network Attachment and Subnet PGA to invoke internal Cloud Run.",
+        "nodes": ["node-user", "node-gemini-app", "node-agent-gateway", "node-psc-attachment", "node-cloud-run"],
+        "edges": ["edge-1", "edge-2", "edge-4", "edge-6"]
+      }
+    ]
+  }</metadata>
+
+  <!-- LAYER 1: HEADER & LEGEND -->
+  <g id="layer-header" data-frame-id="header-main" data-frame-kind="header">
+    <rect x="24" y="14" width="1292" height="54" fill="none"/>
+    <text x="24" y="38" font-size="20" font-weight="600" fill="#202124">Private Cloud Run MCP Server with Gemini Enterprise</text>
+    <text x="24" y="58" font-size="13" fill="#5f6368">End-to-End Private Connectivity via Egress Agent Gateway, Private Service Connect, and FQDN-Scoped Cloud DNS</text>
+
+    <!-- Legend -->
+    <g transform="translate(828, 18)">
+      <rect width="488" height="44" rx="8" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+      <line x1="16" y1="22" x2="44" y2="22" stroke="#1a73e8" stroke-width="2.2"/>
+      <polygon points="42,18 50,22 42,26" fill="#1a73e8"/>
+      <text x="56" y="26" font-size="11" font-weight="500" fill="#3c4043">HTTPS / MCP Data Plane</text>
+
+      <line x1="204" y1="22" x2="232" y2="22" stroke="#9334e6" stroke-width="1.8" stroke-dasharray="5,4"/>
+      <polygon points="230,18 238,22 230,26" fill="#9334e6"/>
+      <text x="244" y="26" font-size="11" font-weight="500" fill="#3c4043">Scoped DNS Peering</text>
+
+      <line x1="368" y1="22" x2="396" y2="22" stroke="#1e8e3e" stroke-width="1.8" stroke-dasharray="5,4"/>
+      <polygon points="394,18 402,22 394,26" fill="#1e8e3e"/>
+      <text x="408" y="26" font-size="11" font-weight="500" fill="#3c4043">PGA VIP Target</text>
+    </g>
+  </g>
+
+  <!-- LAYER 2: GOOGLE CLOUD & PASTEL ZONE BOUNDARIES -->
+  <g id="layer-boundaries">
+    <!-- Outer Google Cloud Boundary -->
+    <g class="boundary" id="boundary-google-cloud" data-frame-id="boundary-google-cloud" data-frame-kind="boundary">
+      <rect x="260" y="84" width="1056" height="444" rx="16" ry="16" fill="#f8f9fa" stroke="#bdc1c6" stroke-width="1.5" stroke-dasharray="6,4"/>
+      <use href="#icon-google-cloud" x="280" y="98" width="24" height="19"/>
+      <text x="310" y="113" font-size="13" font-weight="600" fill="#3c4043">Google Cloud</text>
+    </g>
+
+    <!-- Pastel Blue Zone: Google-Managed Tenant -->
+    <g class="boundary" id="boundary-google-tenant" data-frame-id="boundary-google-tenant" data-frame-kind="boundary">
+      <rect x="288" y="132" width="292" height="368" rx="14" ry="14" fill="#e8f0fe" stroke="#aecbfa" stroke-width="1.5"/>
+      <use href="#icon-gemini" x="308" y="148" width="18" height="18"/>
+      <text x="332" y="162" font-size="12" font-weight="600" fill="#174ea6">Google-Managed Tenant</text>
+      <text x="332" y="177" font-size="10.5" fill="#5f6368">Discovery Engine &amp; Network Services</text>
+    </g>
+
+    <!-- Pastel Green Zone: Customer VPC / Shared Hub VPC -->
+    <g class="boundary" id="boundary-customer-vpc" data-frame-id="boundary-customer-vpc" data-frame-kind="boundary">
+      <rect x="608" y="132" width="380" height="368" rx="14" ry="14" fill="#e6f4ea" stroke="#a8dab5" stroke-width="1.5"/>
+      <use href="#icon-vpc" x="628" y="148" width="18" height="18"/>
+      <text x="652" y="162" font-size="12" font-weight="600" fill="#137333">Customer VPC / Shared Hub VPC</text>
+      <text x="652" y="177" font-size="10.5" fill="#5f6368">Subnet 10.10.0.0/24 · Private Google Access Enabled</text>
+    </g>
+
+    <!-- Pastel Amber Zone: Serverless Execution Tier (Outside VPC, Inside Google Cloud) -->
+    <g class="boundary" id="boundary-serverless" data-frame-id="boundary-serverless" data-frame-kind="boundary">
+      <rect x="1016" y="132" width="272" height="368" rx="14" ry="14" fill="#fef7e0" stroke="#fdd663" stroke-width="1.5"/>
+      <use href="#icon-cloud-run" x="1036" y="148" width="18" height="18"/>
+      <text x="1060" y="162" font-size="12" font-weight="600" fill="#b06000">Serverless Execution Tier</text>
+      <text x="1060" y="177" font-size="10.5" fill="#5f6368">Zero Public Ingress (--ingress=internal)</text>
+    </g>
+  </g>
+
+  <!-- LAYER 3: ORTHOGONAL CONNECTORS -->
+  <g id="layer-edges">
+    <!-- Edge 1: Enterprise User -> Gemini Enterprise App -->
+    <path id="edge-1" class="edge" data-edge-id="edge-1" data-edge-from="node-user" data-edge-to="node-gemini-app" data-edge-label="1. Prompt" data-edge-kind="sync"
+          d="M 168 232 H 316" fill="none" stroke="#1a73e8" stroke-width="2.2" marker-end="url(#arrow-primary)" mask="url(#mask-edge-1)"/>
+
+    <!-- Edge 2: Gemini Enterprise App -> Egress Agent Gateway -->
+    <path id="edge-2" class="edge" data-edge-id="edge-2" data-edge-from="node-gemini-app" data-edge-to="node-agent-gateway" data-edge-label="2. Route + OIDC" data-edge-kind="sync"
+          d="M 434 274 V 372" fill="none" stroke="#1a73e8" stroke-width="2.2" marker-end="url(#arrow-primary)" mask="url(#mask-edge-2)"/>
+
+    <!-- Edge 3: Egress Agent Gateway -> Scoped Private Cloud DNS (DNS Peering) -->
+    <path id="edge-3" class="edge" data-edge-id="edge-3" data-edge-from="node-agent-gateway" data-edge-to="node-cloud-dns" data-edge-label="3. DNS Peering" data-edge-kind="control"
+          d="M 552 392 H 586 Q 594 392 594 384 V 243 Q 594 235 602 235 H 724" fill="none" stroke="#9334e6" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow-dns)" mask="url(#mask-edge-3)"/>
+
+    <!-- Edge 4: Egress Agent Gateway -> PSC Network Attachment -->
+    <path id="edge-4" class="edge" data-edge-id="edge-4" data-edge-from="node-agent-gateway" data-edge-to="node-psc-attachment" data-edge-label="4. PSC Egress" data-edge-kind="sync"
+          d="M 552 418 H 724" fill="none" stroke="#1a73e8" stroke-width="2.2" marker-end="url(#arrow-primary)" mask="url(#mask-edge-4)"/>
+
+    <!-- Edge 5: Scoped Private Cloud DNS -> Private Cloud Run MCP (PGA VIP Target) -->
+    <path id="edge-5" class="edge" data-edge-id="edge-5" data-edge-from="node-cloud-dns" data-edge-to="node-cloud-run" data-edge-label="5. 199.36.153.8/30" data-edge-kind="control"
+          d="M 960 235 H 1146 Q 1154 235 1154 243 V 274" fill="none" stroke="#1e8e3e" stroke-width="1.8" stroke-dasharray="5,4" marker-end="url(#arrow-pga)" mask="url(#mask-edge-5)"/>
+
+    <!-- Edge 6: PSC Network Attachment -> Private Cloud Run MCP (HTTPS /mcp via PGA) -->
+    <path id="edge-6" class="edge" data-edge-id="edge-6" data-edge-from="node-psc-attachment" data-edge-to="node-cloud-run" data-edge-label="6. HTTPS /mcp" data-edge-kind="sync"
+          d="M 960 418 H 1146 Q 1154 418 1154 410 V 378" fill="none" stroke="#1a73e8" stroke-width="2.2" marker-end="url(#arrow-primary)" mask="url(#mask-edge-6)"/>
+  </g>
+
+  <!-- LAYER 4: COMPONENT CARDS -->
+  <g id="layer-nodes">
+    <!-- Node: Enterprise User -->
+    <g class="node" id="node-user" data-frame-id="node-user" data-frame-kind="node" transform="translate(24, 190)" filter="url(#card-shadow)">
+      <rect width="144" height="84" rx="10" ry="10" fill="#ffffff" stroke="#8ab4f8" stroke-width="1.5"/>
+      <use href="#icon-user" x="12" y="24" width="34" height="34"/>
+      <text x="54" y="36" font-size="13" font-weight="600" fill="#202124">Enterprise</text>
+      <text x="54" y="52" font-size="13" font-weight="600" fill="#202124">User</text>
+      <text x="54" y="68" font-family="'Roboto Mono', monospace" font-size="10" fill="#5f6368">Web Chat UI</text>
+    </g>
+
+    <!-- Node: Gemini Enterprise App -->
+    <g class="node" id="node-gemini-app" data-frame-id="node-gemini-app" data-frame-kind="node" transform="translate(316, 190)" filter="url(#card-shadow)">
+      <rect width="236" height="84" rx="10" ry="10" fill="#ffffff" stroke="#8ab4f8" stroke-width="1.5"/>
+      <use href="#icon-gemini" x="14" y="25" width="34" height="34"/>
+      <text x="58" y="33" font-size="13.5" font-weight="600" fill="#202124">Gemini Enterprise</text>
+      <text x="58" y="50" font-family="'Roboto Mono', monospace" font-size="10" fill="#1a73e8">Custom MCP Connector</text>
+      <text x="58" y="66" font-family="'Roboto Mono', monospace" font-size="9.5" fill="#5f6368">Agent Gateway Egress: ON</text>
+    </g>
+
+    <!-- Node: Egress Agent Gateway (Focal Node 1) -->
+    <g class="node" id="node-agent-gateway" data-frame-id="node-agent-gateway" data-frame-kind="node" data-focal="true" transform="translate(316, 372)" filter="url(#card-shadow)">
+      <rect width="236" height="92" rx="10" ry="10" fill="#ffffff" stroke="#1a73e8" stroke-width="2"/>
+      <use href="#icon-networking" x="14" y="28" width="34" height="34"/>
+      <text x="58" y="34" font-size="13.5" font-weight="600" fill="#174ea6">Egress Agent Gateway</text>
+      <text x="58" y="52" font-family="'Roboto Mono', monospace" font-size="9.5" fill="#1a73e8">Network Services (OIDC)</text>
+      <text x="58" y="68" font-family="'Roboto Mono', monospace" font-size="9.5" fill="#5f6368">AGENT_TO_ANYWHERE</text>
+    </g>
+
+    <!-- Node: Scoped Private Cloud DNS -->
+    <g class="node" id="node-cloud-dns" data-frame-id="node-cloud-dns" data-frame-kind="node" transform="translate(724, 190)" filter="url(#card-shadow)">
+      <rect width="236" height="90" rx="10" ry="10" fill="#ffffff" stroke="#8ab4f8" stroke-width="1.5"/>
+      <use href="#icon-cloud-dns" x="14" y="28" width="34" height="34"/>
+      <text x="58" y="33" font-size="13.5" font-weight="600" fill="#202124">Scoped Private DNS</text>
+      <text x="58" y="50" font-family="'Roboto Mono', monospace" font-size="10" fill="#9334e6">&lt;mcp-service&gt;.run.app.</text>
+      <text x="58" y="66" font-family="'Roboto Mono', monospace" font-size="9.5" fill="#5f6368">PGA VIP 199.36.153.8/30</text>
+    </g>
+
+    <!-- Node: PSC Network Attachment -->
+    <g class="node" id="node-psc-attachment" data-frame-id="node-psc-attachment" data-frame-kind="node" transform="translate(724, 372)" filter="url(#card-shadow)">
+      <rect width="236" height="92" rx="10" ry="10" fill="#ffffff" stroke="#8ab4f8" stroke-width="1.5"/>
+      <use href="#icon-psc" x="14" y="29" width="34" height="34"/>
+      <text x="58" y="34" font-size="13.5" font-weight="600" fill="#202124">PSC Attachment</text>
+      <text x="58" y="52" font-family="'Roboto Mono', monospace" font-size="10" fill="#1a73e8">mcp-vpc-attachment</text>
+      <text x="58" y="68" font-family="'Roboto Mono', monospace" font-size="9.5" fill="#5f6368">Subnet 10.10.0.0/24</text>
+    </g>
+
+    <!-- Node: Private Cloud Run MCP Server (Focal Node 2) -->
+    <g class="node" id="node-cloud-run" data-frame-id="node-cloud-run" data-frame-kind="node" data-focal="true" transform="translate(1044, 274)" filter="url(#card-shadow)">
+      <rect width="216" height="104" rx="10" ry="10" fill="#ffffff" stroke="#1a73e8" stroke-width="2"/>
+      <use href="#icon-cloud-run" x="14" y="34" width="36" height="36"/>
+      <text x="58" y="35" font-size="13.5" font-weight="600" fill="#202124">Private Cloud Run</text>
+      <text x="58" y="53" font-family="'Roboto Mono', monospace" font-size="10" fill="#1e8e3e">FastMCP (/mcp)</text>
+      <text x="58" y="69" font-family="'Roboto Mono', monospace" font-size="9.5" fill="#3c4043">--ingress=internal</text>
+      <text x="58" y="85" font-family="'Roboto Mono', monospace" font-size="9.5" fill="#5f6368">IAM: roles/run.invoker</text>
+    </g>
+  </g>
+
+  <!-- LAYER 5: CONNECTOR LABELS (Masked Pills) -->
+  <g id="layer-labels">
+    <!-- Label 1 -->
+    <g class="edge-label" id="label-edge-1">
+      <rect x="176" y="222" width="76" height="20" rx="10" data-label-for="edge-1" fill="#ffffff" stroke="#d2e3fc" stroke-width="1"/>
+      <text x="214" y="236" text-anchor="middle" font-family="'Roboto Mono', monospace" font-size="10" font-weight="500" fill="#1a73e8">1. Prompt</text>
+    </g>
+
+    <!-- Label 2 -->
+    <g class="edge-label" id="label-edge-2">
+      <rect x="376" y="313" width="116" height="20" rx="10" data-label-for="edge-2" fill="#edf2fc" stroke="#aecbfa" stroke-width="1"/>
+      <text x="434" y="327" text-anchor="middle" font-family="'Roboto Mono', monospace" font-size="10" font-weight="500" fill="#174ea6">2. Route + OIDC</text>
+    </g>
+
+    <!-- Label 3 -->
+    <g class="edge-label" id="label-edge-3">
+      <rect x="616" y="225" width="100" height="20" rx="10" data-label-for="edge-3" fill="#ffffff" stroke="#e9d2fd" stroke-width="1"/>
+      <text x="666" y="239" text-anchor="middle" font-family="'Roboto Mono', monospace" font-size="10" font-weight="500" fill="#9334e6">3. DNS Peering</text>
+    </g>
+
+    <!-- Label 4 -->
+    <g class="edge-label" id="label-edge-4">
+      <rect x="616" y="408" width="100" height="20" rx="10" data-label-for="edge-4" fill="#ffffff" stroke="#d2e3fc" stroke-width="1"/>
+      <text x="666" y="422" text-anchor="middle" font-family="'Roboto Mono', monospace" font-size="10" font-weight="500" fill="#1a73e8">4. PSC Egress</text>
+    </g>
+
+    <!-- Label 5 -->
+    <g class="edge-label" id="label-edge-5">
+      <rect x="1026" y="225" width="122" height="20" rx="10" data-label-for="edge-5" fill="#ffffff" stroke="#ceead6" stroke-width="1"/>
+      <text x="1087" y="239" text-anchor="middle" font-family="'Roboto Mono', monospace" font-size="10" font-weight="500" fill="#1e8e3e">5. 199.36.153.8/30</text>
+    </g>
+
+    <!-- Label 6 -->
+    <g class="edge-label" id="label-edge-6">
+      <rect x="1026" y="408" width="122" height="20" rx="10" data-label-for="edge-6" fill="#ffffff" stroke="#d2e3fc" stroke-width="1"/>
+      <text x="1087" y="422" text-anchor="middle" font-family="'Roboto Mono', monospace" font-size="10" font-weight="500" fill="#1a73e8">6. HTTPS /mcp</text>
+    </g>
+  </g>
+</svg>
